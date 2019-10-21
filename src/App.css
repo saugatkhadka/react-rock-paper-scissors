@@ -1,22 +1,24 @@
-.App {
-  text-align: center;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  background-color: #0bb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.player-card {
+  width: 10rem;
+  height: 10rem;
+  line-height: 12.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.App-link {
-  color: #09d3ac;
+.player-card:nth-child(2) {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
